@@ -7,5 +7,6 @@ describe ('Testes de cadastro', () => {
         cy.get('[data-testid="password"]').type('123456789')
         cy.get('[data-testid="checkbox"]').click()
         cy.get('[data-testid="cadastrar"]').click()   
+        cy.get('.alert').contains('Este email já está sendo usado')
     })
 })
